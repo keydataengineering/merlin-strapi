@@ -60,7 +60,8 @@
     "dashboard_filter_common_custom_unit_group": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::dashboard-filter-common-custom-unit-group.dashboard-filter-common-custom-unit-group"
+      "target": "api::dashboard-filter-common-custom-unit-group.dashboard-filter-common-custom-unit-group",
+      "inversedBy": "dashboard_filter_common"
     }
   }
 }
