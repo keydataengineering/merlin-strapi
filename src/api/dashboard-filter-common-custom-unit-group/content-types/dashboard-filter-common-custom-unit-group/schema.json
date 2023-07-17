@@ -4,7 +4,8 @@
   "info": {
     "singularName": "dashboard-filter-common-custom-unit-group",
     "pluralName": "dashboard-filter-common-custom-unit-groups",
-    "displayName": "DashboardFilterCommonCustomUnitGroup"
+    "displayName": "DashboardFilterCommonCustomUnitGroup",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,12 +26,6 @@
       "type": "boolean",
       "default": false,
       "required": true
-    },
-    "dashboard_filter_common": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::dashboard-filter-common.dashboard-filter-common",
-      "inversedBy": "dashboard_filter_common_custom_unit_group"
     }
   }
 }
