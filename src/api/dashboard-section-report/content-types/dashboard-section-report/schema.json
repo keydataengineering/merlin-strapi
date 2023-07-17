@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboard_section_reports",
+  "info": {
+    "singularName": "dashboard-section-report",
+    "pluralName": "dashboard-section-reports",
+    "displayName": "DashboardSectionReport",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "view_type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "SCORECARD",
+        "TABLE",
+        "MAP",
+        "TIME_SERIES",
+        "LINE_CHART",
+        "BAR_CHART",
+        "MULTI_CHART",
+        "SINGLE_VALUE_SCORECARD"
+      ],
+      "default": "SCORECARD",
+      "required": true
+    },
+    "static": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

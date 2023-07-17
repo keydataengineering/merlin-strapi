@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboard_sections",
+  "info": {
+    "singularName": "dashboard-section",
+    "pluralName": "dashboard-sections",
+    "displayName": "DashboardSection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Section Title",
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "dashboard_filter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dashboard-filter.dashboard-filter",
+      "inversedBy": "dashboard_section"
+    },
+    "dashboard": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dashboard.dashboard",
+      "inversedBy": "dashboard_sections"
+    }
+  }
+}

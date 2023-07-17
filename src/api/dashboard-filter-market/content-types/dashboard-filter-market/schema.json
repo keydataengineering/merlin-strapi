@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboard_filter_markets",
+  "info": {
+    "singularName": "dashboard-filter-market",
+    "pluralName": "dashboard-filter-markets",
+    "displayName": "DashboardFilterMarket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "multiple": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "allowed_values": {
+      "type": "string"
+    }
+  }
+}

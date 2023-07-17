@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboard_filters",
+  "info": {
+    "singularName": "dashboard-filter",
+    "pluralName": "dashboard-filters",
+    "displayName": "DashboardFilter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "dashboard_filter_date_range": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dashboard-filter-date-range.dashboard-filter-date-range"
+    },
+    "dashboard_filter_common": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dashboard-filter-common.dashboard-filter-common"
+    },
+    "dashboard_filter_market": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dashboard-filter-market.dashboard-filter-market"
+    },
+    "dashboard_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dashboard-section.dashboard-section",
+      "mappedBy": "dashboard_filter"
+    }
+  }
+}

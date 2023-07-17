@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboard_filter_commons",
+  "info": {
+    "singularName": "dashboard-filter-common",
+    "pluralName": "dashboard-filter-commons",
+    "displayName": "DashboardFilterCommon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "marketing_sources": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "sleeps": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "bedrooms": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "unit_types": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "locations": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "amenities": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "areas": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "market_sources": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "specific_units": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "dashboard_filter_common_custom_unit_group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dashboard-filter-common-custom-unit-group.dashboard-filter-common-custom-unit-group"
+    }
+  }
+}

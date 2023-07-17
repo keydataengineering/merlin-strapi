@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboard_filter_date_ranges",
+  "info": {
+    "singularName": "dashboard-filter-date-range",
+    "pluralName": "dashboard-filter-date-ranges",
+    "displayName": "DashboardFilterDateRange",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seasons": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "custom": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "compare": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "compared_required": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "as_of": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "number_of_compares_allowed": {
+      "type": "integer"
+    },
+    "query_anchor": {
+      "type": "text",
+      "default": "arrival"
+    }
+  }
+}

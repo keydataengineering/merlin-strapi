@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboards",
+  "info": {
+    "singularName": "dashboard",
+    "pluralName": "dashboards",
+    "displayName": "Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "show": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "nav_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nav-item.nav-item",
+      "mappedBy": "dashboard_id"
+    },
+    "dashboard_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dashboard-section.dashboard-section",
+      "mappedBy": "dashboard"
+    }
+  }
+}

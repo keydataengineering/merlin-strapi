@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboard_filter_common_custom_unit_groups",
+  "info": {
+    "singularName": "dashboard-filter-common-custom-unit-group",
+    "pluralName": "dashboard-filter-common-custom-unit-groups",
+    "displayName": "DashboardFilterCommonCustomUnitGroup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exlusions": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "inclusion": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "multi_select": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

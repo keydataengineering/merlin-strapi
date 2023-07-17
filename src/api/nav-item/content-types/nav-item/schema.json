@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nav_items",
+  "info": {
+    "singularName": "nav-item",
+    "pluralName": "nav-items",
+    "displayName": "NavigationCategoryItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "isNew": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "pageType": {
+      "type": "enumeration",
+      "enum": [
+        "dashboards",
+        "reports",
+        "tools",
+        "units"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "dashboard_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dashboard.dashboard",
+      "inversedBy": "nav_item"
+    },
+    "nav_sub_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nav-sub-item.nav-sub-item",
+      "inversedBy": "navigation_category_items"
+    }
+  }
+}
